@@ -23,7 +23,7 @@ const questionButton = document.querySelector('#questionButton');
 const questionOne = document.querySelector('#q1');
 
 const revealQuestion = () => {
-	questionOne.style.display = 'block';
+	questionOne.style.display = 'block'; // placeholder
 };
 
 questionButton.addEventListener('click', revealQuestion);
@@ -52,19 +52,67 @@ form.addEventListener('submit', (event) => {
 
 /// Next Question button ///
 
-const nextQuestion = document.querySelector('#nextButton')
+const nextQuestion = document.querySelector('#nextButton');
 
-nextQuestion.addEventListener('click', cleanPage)
+nextQuestion.addEventListener('click', cleanPage);
 
 function cleanPage() {
-    
+	rightGif.style.display = 'none';
+	wrongGif.style.display = 'none';
+    answerOne.style.display = 'none';
+    questionOne.style.display = 'none'
+    answerInput.value = '';
 }
 
+// works for now, need to implement loop on array
 
+//________________________________________________________________________
 
-
-
-
+const triviaArray = [
+	{
+		question: 'Who was Darth Vader before turning to the dark side?',
+		answer: 'Anakin Skywalker',
+	},
+	{
+		question: "What bounty hunter's DNA is the Clone army made from?",
+		answer: 'Jango Fett',
+	},
+	{
+		question: 'Who infiltrates Jabba’s palace in disguise to save Han Solo?',
+		answer: 'Princess Leia',
+	},
+	{
+		question:
+			'Who says, "You can\'t win, Darth. If you strike me down, I shall become more powerful   than you could possibly imagine"',
+		answer: 'Obi-Wan Kenobi',
+	},
+	{
+		question: "What color is Luke's lightsaber in Return of the Jedi?",
+		answer: 'Green',
+	},
+	{
+		question: 'What year did The Empire Strikes Back come out?',
+		answer: '1980',
+	},
+	{
+		question: 'On what planet did Anakin see Padme for the last time?',
+		answer: 'Mustafar',
+	},
+	{
+		question: "Who was Darth Sidious' master?",
+		answer: 'Darth Plagueis',
+	},
+	{
+		question:
+			'Which clone trooper served under Jedi Master Plo Koon in the Clone Wars?',
+		answer: 'Commander Wolffe',
+	},
+	{
+		question:
+			'How many Dewbacks were in the original 1977 theatrical cut of A New Hope?',
+		answer: '2',
+	},
+];
 
 // SCORE SOMEWHERE??? //
 
@@ -86,6 +134,9 @@ function cleanPage() {
 
 2.  Q: What bounty hunter's DNA is the Clone army made from?
     A: Jango fett
+
+3.  Q: On what planet did Anakin see Padme for the last time?
+    A: Mustafar
 
 4.  Q: Who infiltrates Jabba’s palace in disguise to save Han Solo?
     A: Princess Leia
