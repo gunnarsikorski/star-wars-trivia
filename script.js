@@ -48,6 +48,24 @@ form.addEventListener('submit', (event) => {
 	}
 });
 
+//________________________________________________________________________
+
+/// Next Question button ///
+
+const nextQuestion = document.querySelector('#nextButton')
+
+nextQuestion.addEventListener('click', cleanPage)
+
+function cleanPage() {
+    
+}
+
+
+
+
+
+
+
 // SCORE SOMEWHERE??? //
 
 /*
