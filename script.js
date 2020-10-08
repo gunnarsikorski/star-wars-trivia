@@ -19,16 +19,36 @@ closeModalButton.addEventListener('click', closeModal);
 
 /// Question Button ///
 
+const questionButton = document.querySelector('#questionButton');
+const questionOne = document.querySelector('#q1');
 
+const revealQuestion = () => {
+	questionOne.style.display = 'block';
+};
 
+questionButton.addEventListener('click', revealQuestion);
 
+//________________________________________________________________________
 
+/// Answer field ///
 
+const form = document.querySelector('form');
+const answerInput = document.querySelector('input[type=text]');
+const answerOne = document.querySelector('#a1');
+const rightGif = document.querySelector('#rightGif');
+const wrongGif = document.querySelector('#wrongGif');
 
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	if (answerInput.value === 'Anakin Skywalker') {
+		rightGif.style.display = 'block';
+	} else {
+		answerOne.style.display = 'block';
+		wrongGif.style.display = 'block';
+	}
+});
 
-
-
-
+// SCORE SOMEWHERE??? //
 
 /*
 1. Modal on launch - explaining how the game works
