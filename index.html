@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Star Wars Trivia</title>
-</head>
-<body>
-    <button id='openModal'>How to Play</button>
-    
-    <h1>Star Wars Trivia</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Star Wars Trivia</title>
+	</head>
+	<body>
+		<button id="openModal">How to Play</button>
 
-    <div id='modal'>
-     <div id='modalText'>
-            <h1>In a galaxy far far away...</h1>
-        <p>
-            Come and test your knowledge! Go through a number of Star Wars trivia questions and see just how well you stack up. Do you possess a Jedi Master's level of knowledge? Or more like the know-how of a womp rat? 
-        </p>
-        <p>
-            The following questions focus mainly on the original trilogy and prequels, and who knows, maybe some Clone Wars questions for those real
-            fans. Staying away from the sequel trilogy.... thanks Kathleen Kennedy.
-         </p>
-         <p>
-            We will watch your career with great interest... may the force be with you.
-        </p>
-        <div id='modalFooter'>
-            <button id='close'>Close</button>
-        </div>
+		<h1>Star Wars Trivia</h1>
 
-        </div>
-    </div>
+		<div id="modal">
+			<div id="modalText">
+				<h1 id="modalTitle">In a galaxy far far away...</h1>
+				<p>
+					Come and test your knowledge! Go through a number of Star Wars trivia
+					questions and see just how well you stack up. Do you possess a Jedi
+					Master's level of knowledge? Or more like the know-how of a womp rat?
+				</p>
+				<p>
+					The following questions focus mainly on the original trilogy and
+					prequels, and who knows, maybe some Clone Wars questions for those
+					real fans. Staying away from the sequel trilogy.... thanks Kathleen
+					Kennedy.
+				</p>
+				<p>
+					We will watch your career with great interest... may the force be with
+					you.
+				</p>
+				<div id="modalFooter">
+					<button id="closeModal">Close</button>
+				</div>
+			</div>
+		</div>
 
-    <form>
-        <input type="text" placeholder="Your answer here">
-        <input type="submit" value="Submit answer">
-    </form>
+		<button id="questionButton">Give me a question!</button>
 
-    <script src="script.js"></script>
-</body>
+		<div id="questionBox">
+			<p id="q1">
+                Who was Darth Vader before turning to the dark side?
+            </p>
+		</div>
+
+		<form>
+			<input type="text" placeholder="Your answer here" />
+			<input type="submit" value="Submit answer" />
+		</form>
+
+		<div id="answerBox">
+			<p id="a1">
+                Anakin Skywalker
+            </p>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
 </html>

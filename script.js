@@ -1,8 +1,23 @@
+/// MODAL ///
 
+const openModalButton = document.querySelector('#openModal');
+const modal = document.querySelector('#modal');
+const closeModalButton = document.querySelector('#closeModal');
 
+const openModal = () => {
+	modal.style.display = 'block';
+};
+const closeModal = () => {
+	modal.style.display = 'none';
+};
 
+openModalButton.addEventListener('click', openModal);
 
+closeModalButton.addEventListener('click', closeModal);
 
+//________________________________________________________________________
+
+/// Question Button ///
 
 
 
@@ -24,7 +39,6 @@
 6. Button for the next question to come up
 7. Different modal to pop up and show score?
 */
-
 
 // Trivia questions:
 

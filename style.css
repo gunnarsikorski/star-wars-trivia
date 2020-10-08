@@ -1,0 +1,63 @@
+#modal {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+
+#modalTitle {
+    padding-bottom: 1.5rem;
+    
+}
+
+
+#modalText {
+    
+    background-color: black;
+    background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+    color: #ffe81f;
+	height: 350px;
+	width: 600px;
+	border-radius: 4px;
+	margin: 200px auto;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+	padding: 10%;
+	line-height: 150%;
+    font-family: arial;
+    font-size: large;
+    text-align: center;
+}
+
+#modalFooter {
+    padding-top: 1.5rem;
+	text-align: center;
+}
+
+/* How to Play button */
+#openModal {
+	padding: 14px 18px;
+	background-color: black;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	color: #ffe81f;
+	font-family: 'Arial';
+	
+}
+
+/* Close button in the modal */
+#closeModal {
+    padding: 5px 18px;
+	background-color: #ffe81f;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: black;
+	font-family: 'Arial';
+	
+}
