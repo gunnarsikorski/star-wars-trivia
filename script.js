@@ -23,6 +23,7 @@ const questionButton = document.querySelector('#questionButton');
 let questionOne = document.querySelector('#q1');
 
 const revealQuestion = () => {
+	questionOne.innerText = triviaArray[0].question;
 	// questionOne.style.display = 'block'; // placeholder
 };
 
@@ -41,6 +42,7 @@ const wrongGif = document.querySelector('#wrongGif');
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
 	if (answerInput.value === 'Anakin Skywalker') {
+		//update to be looped into array with correct answer
 		rightGif.style.display = 'block';
 	} else {
 		answerOne.style.display = 'block';
@@ -62,8 +64,8 @@ function cleanPage() {
 	answerOne.style.display = 'none';
 	// questionOne.style.display = 'none';
 	answerInput.value = '';
-	for (let i = 0; i < triviaArray.length; i++) {
-		questionOne.innerText = triviaArray[i].question
+	for (let i = 1; i < triviaArray.length; i++) {
+		questionOne.innerText = triviaArray[i].question;
 		
 	}
 }
