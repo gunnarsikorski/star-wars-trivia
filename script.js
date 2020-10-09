@@ -20,10 +20,10 @@ closeModalButton.addEventListener('click', closeModal);
 /// Question Button ///
 
 const questionButton = document.querySelector('#questionButton');
-const questionOne = document.querySelector('#q1');
+let questionOne = document.querySelector('#q1');
 
 const revealQuestion = () => {
-	questionOne.style.display = 'block'; // placeholder
+	// questionOne.style.display = 'block'; // placeholder
 };
 
 questionButton.addEventListener('click', revealQuestion);
@@ -59,9 +59,13 @@ nextQuestion.addEventListener('click', cleanPage);
 function cleanPage() {
 	rightGif.style.display = 'none';
 	wrongGif.style.display = 'none';
-    answerOne.style.display = 'none';
-    questionOne.style.display = 'none'
-    answerInput.value = '';
+	answerOne.style.display = 'none';
+	// questionOne.style.display = 'none';
+	answerInput.value = '';
+	for (let i = 0; i < triviaArray.length; i++) {
+		questionOne.innerText = triviaArray[i].question
+		
+	}
 }
 
 // works for now, need to implement loop on array
