@@ -42,12 +42,31 @@ const wrongGif = document.querySelector('#wrongGif');
 
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
-	if (answerInput.value === 'Anakin Skywalker') {
+	if (questionOne.innerText === triviaArray[0].question && answerInput.value === triviaArray[0].answer) {
 		//update to be looped into array with correct answer
 		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[1].question && answerInput.value === triviaArray[1].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[2].question && answerInput.value === triviaArray[2].answer) {
+		rightGif.style.display = 'block';	
+	} else if (questionOne.innerText === triviaArray[3].question && answerInput.value === triviaArray[3].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[4].question && answerInput.value === triviaArray[4].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[5].question && answerInput.value === triviaArray[5].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[6].question && answerInput.value === triviaArray[6].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[7].question && answerInput.value === triviaArray[7].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[8].question && answerInput.value === triviaArray[8].answer) {
+		rightGif.style.display = 'block';
+	} else if (questionOne.innerText === triviaArray[9].question && answerInput.value === triviaArray[9].answer) {
+		rightGif.style.display = 'block';
 	} else {
-		answerOne.style.display = 'block';
+		// answerOne.style.display = 'block';
 		wrongGif.style.display = 'block';
+
 	}
 });
 
