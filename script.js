@@ -65,9 +65,29 @@ function cleanPage() {
 	answerOne.style.display = 'none';
 	// questionOne.style.display = 'none';
 	answerInput.value = '';
-	for (let i = 1; i < triviaArray.length; i++) {
-		questionOne.innerText = triviaArray[i].question;
+	// for (let i = 1; i < triviaArray.length; i++) {
+	// 	questionOne.innerText = triviaArray[i].question;
 		
+	// } I KNOW THIS (ABOVE) CAN WORK IM SO CLOSE^^^
+
+	if (questionOne.innerText === triviaArray[0].question) {
+		questionOne.innerText = triviaArray[1].question;
+	} else if (questionOne.innerText === triviaArray[1].question) {
+		questionOne.innerText = triviaArray[2].question;
+	} else if (questionOne.innerText === triviaArray[2].question) {
+		questionOne.innerText = triviaArray[3].question;
+	} else if (questionOne.innerText === triviaArray[3].question) {
+		questionOne.innerText = triviaArray[4].question;
+	} else if (questionOne.innerText === triviaArray[4].question) {
+		questionOne.innerText = triviaArray[5].question;
+	} else if (questionOne.innerText === triviaArray[5].question) {
+		questionOne.innerText = triviaArray[6].question;
+	} else if (questionOne.innerText === triviaArray[6].question) {
+		questionOne.innerText = triviaArray[7].question;
+	} else if (questionOne.innerText === triviaArray[7].question) {
+		questionOne.innerText = triviaArray[8].question;
+	} else if (questionOne.innerText === triviaArray[8].question) {
+		questionOne.innerText = triviaArray[9].question;
 	}
 }
 
@@ -90,7 +110,7 @@ const triviaArray = [
 	},
 	{
 		question:
-			'Who says, "You can\'t win, Darth. If you strike me down, I shall become more powerful   than you could possibly imagine"',
+			'Who says: "You can\'t win, Darth. If you strike me down, I shall become more powerful than you could possibly imagine"',
 		answer: 'Obi-Wan Kenobi',
 	},
 	{
