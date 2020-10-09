@@ -25,6 +25,7 @@ let questionOne = document.querySelector('#q1');
 const revealQuestion = () => {
 	questionOne.innerText = triviaArray[0].question;
 	// questionOne.style.display = 'block'; // placeholder
+	questionButton.style.display = 'none'
 };
 
 questionButton.addEventListener('click', revealQuestion);

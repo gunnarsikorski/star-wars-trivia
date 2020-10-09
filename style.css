@@ -47,6 +47,7 @@
 	border-radius: 10px;
 	color: #ffe81f;
 	font-family: 'Arial';
+	cursor: pointer;
 	
 }
 
@@ -59,15 +60,20 @@
 	border-radius: 3px;
 	color: black;
 	font-family: 'Arial';
+	cursor: pointer;
 	
 }
 
 #rightGif {
-    display: none;
+	display: none;
+	position: absolute;
+	top: 35%;
 }
 
 #wrongGif {
-    display: none;
+	display: none;
+	position: absolute;
+	top: 35%;
 }
 
 #q1 {
@@ -75,5 +81,29 @@
 }
 
 #a1 {
-    display: none;
+	display: none;
+	position: absolute;
+	top: 55%;
+}
+
+
+/* div where question pops up */
+#questionBox {
+	margin: 5rem;
+}
+
+/* div where answer pops up */
+#answerBox {
+	margin: 5rem;
+}
+
+/* next question button */
+#nextButton {
+	position: absolute;
+	top: 65%;
+}
+
+form {
+	position: absolute;
+	top: 30%;
 }
