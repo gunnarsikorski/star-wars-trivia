@@ -25,7 +25,7 @@ let questionOne = document.querySelector('#q1');
 const revealQuestion = () => {
 	questionOne.innerText = triviaArray[0].question;
 	// questionOne.style.display = 'block'; // placeholder
-	questionButton.style.display = 'none'
+	questionButton.style.display = 'none';
 };
 
 questionButton.addEventListener('click', revealQuestion);
@@ -42,31 +42,60 @@ const wrongGif = document.querySelector('#wrongGif');
 
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
-	if (questionOne.innerText === triviaArray[0].question && answerInput.value === triviaArray[0].answer) {
+	if (
+		questionOne.innerText === triviaArray[0].question &&
+		answerInput.value === triviaArray[0].answer
+	) {
 		//update to be looped into array with correct answer
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[1].question && answerInput.value === triviaArray[1].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[1].question &&
+		answerInput.value === triviaArray[1].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[2].question && answerInput.value === triviaArray[2].answer) {
-		rightGif.style.display = 'block';	
-	} else if (questionOne.innerText === triviaArray[3].question && answerInput.value === triviaArray[3].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[2].question &&
+		answerInput.value === triviaArray[2].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[4].question && answerInput.value === triviaArray[4].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[3].question &&
+		answerInput.value === triviaArray[3].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[5].question && answerInput.value === triviaArray[5].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[4].question &&
+		answerInput.value === triviaArray[4].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[6].question && answerInput.value === triviaArray[6].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[5].question &&
+		answerInput.value === triviaArray[5].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[7].question && answerInput.value === triviaArray[7].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[6].question &&
+		answerInput.value === triviaArray[6].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[8].question && answerInput.value === triviaArray[8].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[7].question &&
+		answerInput.value === triviaArray[7].answer
+	) {
 		rightGif.style.display = 'block';
-	} else if (questionOne.innerText === triviaArray[9].question && answerInput.value === triviaArray[9].answer) {
+	} else if (
+		questionOne.innerText === triviaArray[8].question &&
+		answerInput.value === triviaArray[8].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[9].question &&
+		answerInput.value === triviaArray[9].answer
+	) {
 		rightGif.style.display = 'block';
 	} else {
 		// answerOne.style.display = 'block';
 		wrongGif.style.display = 'block';
-
 	}
 });
 
@@ -86,7 +115,7 @@ function cleanPage() {
 	answerInput.value = '';
 	// for (let i = 1; i < triviaArray.length; i++) {
 	// 	questionOne.innerText = triviaArray[i].question;
-		
+
 	// } I KNOW THIS (ABOVE) CAN WORK IM SO CLOSE^^^
 
 	if (questionOne.innerText === triviaArray[0].question) {
