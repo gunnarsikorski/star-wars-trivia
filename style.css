@@ -64,6 +64,60 @@
 	
 }
 
+#thanksModal {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+
+#thanksModalTitle {
+	padding-bottom: 1.5rem;
+}
+
+#thanksModalText {
+	background-color: black;
+    background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+    color: #ffe81f;
+	height: 550px;
+	width: 600px;
+	border-radius: 4px;
+	margin: 200px auto;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+	padding: 10%;
+	line-height: 150%;
+    font-family: arial;
+    font-size: large;
+    text-align: left;
+}
+
+#thanksModalFooter {
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+#thanksModalReplay {
+	padding: 5px 18px;
+	background-color: #ffe81f;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: black;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+
+#answerList {
+	
+	text-align: left;
+	line-height: 2rem;
+}
+
 #rightGif {
 	display: none;
 	position: absolute;
@@ -83,7 +137,7 @@
 #a1 {
 	display: none;
 	position: absolute;
-	top: 55%;
+	top: 60%;
 }
 
 
@@ -100,7 +154,14 @@
 /* next question button */
 #nextButton {
 	position: absolute;
-	top: 62%;
+	top: 65%;
+}
+
+#finishButton {
+	position: absolute;
+	top: 65%;
+	left: 15%;
+	display: none;
 }
 
 form {

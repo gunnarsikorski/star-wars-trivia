@@ -1,4 +1,4 @@
-/// MODAL ///
+/// Intro MODAL ///
 
 const openModalButton = document.querySelector('#openModal');
 const modal = document.querySelector('#modal');
@@ -45,6 +45,7 @@ form.addEventListener('submit', (event) => {
 	if (
 		questionOne.innerText === triviaArray[0].question &&
 		answerInput.value === triviaArray[0].answer
+		
 	) {
 		//update to be looped into array with correct answer
 		rightGif.style.display = 'block';
@@ -94,8 +95,9 @@ form.addEventListener('submit', (event) => {
 	) {
 		rightGif.style.display = 'block';
 	} else {
-		// answerOne.style.display = 'block';
 		wrongGif.style.display = 'block';
+		// answerOne.innerText = triviaArray[].answer;
+		// answerOne.style.display = 'block';
 	}
 });
 
@@ -104,6 +106,7 @@ form.addEventListener('submit', (event) => {
 /// Next Question button ///
 
 const nextQuestion = document.querySelector('#nextButton');
+const finishButton = document.querySelector('#finishButton')
 
 nextQuestion.addEventListener('click', cleanPage);
 
@@ -136,10 +139,32 @@ function cleanPage() {
 		questionOne.innerText = triviaArray[8].question;
 	} else if (questionOne.innerText === triviaArray[8].question) {
 		questionOne.innerText = triviaArray[9].question;
+	} else if (questionOne.innerText === triviaArray[9].question) {
+		nextQuestion.style.display = 'none'
+		questionOne.style.display = 'none'
+		finishButton.style.display = 'block'
+
 	}
 }
 
 // works for now, need to implement loop on array
+
+//________________________________________________________________________
+
+/// Finish Button ///
+const thanksModal = document.querySelector('#thanksModal')
+
+
+const openThanksModal = () => {
+	thanksModal.style.display = 'block';
+};
+
+finishButton.addEventListener('click', openThanksModal)
+
+
+
+
+
 
 //________________________________________________________________________
 
@@ -185,7 +210,7 @@ const triviaArray = [
 	{
 		question:
 			'How many Dewbacks were in the original 1977 theatrical cut of A New Hope?',
-		answer: '2',
+		answer: 'Two',
 	},
 ];
 
