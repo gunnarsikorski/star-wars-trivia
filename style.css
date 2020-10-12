@@ -7,7 +7,7 @@
 	width: 100%;
 	z-index: 1;
 	overflow: auto;
-	display: none;
+	display: 'block';
 }
 
 #modalTitle {
@@ -21,16 +21,18 @@
     background-color: black;
     background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
     color: #ffe81f;
-	height: 350px;
+	height: 450px;
 	width: 600px;
 	border-radius: 4px;
 	margin: 200px auto;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 	padding: 10%;
 	line-height: 150%;
-    font-family: arial;
+	font-family: arial;
+	font-weight: bolder;
     font-size: large;
-    text-align: center;
+	text-align: center;
+	
 }
 
 #modalFooter {
@@ -61,6 +63,9 @@
 	color: black;
 	font-family: 'Arial';
 	cursor: pointer;
+	margin-top: 3rem;
+	
+	
 	
 }
 
@@ -92,7 +97,8 @@
 	padding: 10%;
 	line-height: 150%;
     font-family: arial;
-    font-size: large;
+	font-size: large;
+	font-weight: bolder;
     text-align: left;
 }
 
@@ -168,3 +174,4 @@ form {
 	position: absolute;
 	top: 30%;
 }
+

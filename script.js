@@ -45,7 +45,6 @@ form.addEventListener('submit', (event) => {
 	if (
 		questionOne.innerText === triviaArray[0].question &&
 		answerInput.value === triviaArray[0].answer
-		
 	) {
 		//update to be looped into array with correct answer
 		rightGif.style.display = 'block';
@@ -106,7 +105,7 @@ form.addEventListener('submit', (event) => {
 /// Next Question button ///
 
 const nextQuestion = document.querySelector('#nextButton');
-const finishButton = document.querySelector('#finishButton')
+const finishButton = document.querySelector('#finishButton');
 
 nextQuestion.addEventListener('click', cleanPage);
 
@@ -118,6 +117,9 @@ function cleanPage() {
 	answerInput.value = '';
 	// for (let i = 1; i < triviaArray.length; i++) {
 	// 	questionOne.innerText = triviaArray[i].question;
+
+
+	
 
 	// } I KNOW THIS (ABOVE) CAN WORK IM SO CLOSE^^^
 
@@ -140,10 +142,9 @@ function cleanPage() {
 	} else if (questionOne.innerText === triviaArray[8].question) {
 		questionOne.innerText = triviaArray[9].question;
 	} else if (questionOne.innerText === triviaArray[9].question) {
-		nextQuestion.style.display = 'none'
-		questionOne.style.display = 'none'
-		finishButton.style.display = 'block'
-
+		nextQuestion.style.display = 'none';
+		questionOne.style.display = 'none';
+		finishButton.style.display = 'block';
 	}
 }
 
@@ -152,16 +153,20 @@ function cleanPage() {
 //________________________________________________________________________
 
 /// Finish Button ///
-const thanksModal = document.querySelector('#thanksModal')
-
+const thanksModal = document.querySelector('#thanksModal');
+const replayButton = document.querySelector('#thanksModalReplay');
 
 const openThanksModal = () => {
 	thanksModal.style.display = 'block';
 };
 
-finishButton.addEventListener('click', openThanksModal)
+const closeThanksModal = () => {
+	thanksModal.style.display = 'none'
+	
+}
 
-
+finishButton.addEventListener('click', openThanksModal);
+// replayButton.addEventListener('click', closeThanksModal)
 
 
 
