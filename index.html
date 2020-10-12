@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
 		<title>Star Wars Trivia</title>
 	</head>
@@ -10,7 +11,7 @@
 		
 		<button id="openModal">How to Play</button>
 
-		<h1>Star Wars Trivia</h1>
+		<h1 id="mainTitle">STAR WARS TRIVIA</h1>
 
 		<div id="modal">
 			<div id="modalText">
@@ -23,7 +24,7 @@
 				<p>
 					The following questions focus mainly on the original trilogy and
 					prequels, and who knows, maybe some Clone Wars questions for those
-					real fans. Staying away from the sequel trilogy.... thanks Kathleen
+					real fans. Staying away from the sequel trilogy... thanks Kathleen
 					Kennedy. Keep in mind spelling and capitalization!
 				</p>
 				<p>
@@ -67,8 +68,9 @@
 					</div>
 				</div>
 
-
-		<button id="questionButton">Start!</button>
+		<div id="startButtonDiv">
+		<button id="questionButton">Begin</button>
+		</div>
 
 		<div id="questionBox">
 			<p id="q1">
@@ -76,25 +78,32 @@
             </p>
 		</div>
 
+		<div id="form">
 		<form>
 			<input type="text" placeholder="Your answer here" />
 			<input type="submit" value="Submit answer" />
 		</form>
-
-		<div id="answerBox">
-            <p id="rightGif">
-                <img src="https://media1.tenor.com/images/f41d9486f5d01fb744c061bfaacf2c6c/tenor.gif?itemid=4624104" alt="Gooooood">
-            </p>
-            <p id="wrongGif">
-                <img src="https://media4.giphy.com/media/l3fZJroOW8RAafbc4/giphy.gif" alt="You are mistaken">
-            </p>
-			<p id="a1">
-                Answer is: Anakin Skywalker
-            </p>
-        </div>
-        
+	</div>
+	
+	<div id="answerBox">
+		<p id="rightGif">
+			<img src="https://media1.tenor.com/images/f41d9486f5d01fb744c061bfaacf2c6c/tenor.gif?itemid=4624104" alt="Gooooood">
+		</p>
+		<p id="wrongGif">
+			<img src="https://media4.giphy.com/media/l3fZJroOW8RAafbc4/giphy.gif" alt="You are mistaken">
+		</p>
+		<p id="a1">
+			Answer is: Anakin Skywalker
+		</p>
+	</div>
+	
+		<div id="nextContainer">
 		<button id="nextButton">Next Question</button>
+		</div>
+		
+		<div id="finishContainer">
 		<button id="finishButton">Finish</button>
+		</div>
 
 		
 

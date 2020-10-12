@@ -1,3 +1,7 @@
+html {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
 #modal {
 	background-color: rgba(0, 0, 0, 0.6);
 	position: fixed;
@@ -21,7 +25,7 @@
     background-color: black;
     background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
     color: #ffe81f;
-	height: 450px;
+	height: 520px;
 	width: 600px;
 	border-radius: 4px;
 	margin: 200px auto;
@@ -30,14 +34,17 @@
 	line-height: 150%;
 	font-family: arial;
 	font-weight: bolder;
-    font-size: large;
+    font-size: 25px;
 	text-align: center;
+	font-family: 'Pathway Gothic One', sans-serif;
+	
 	
 }
 
 #modalFooter {
     padding-top: 1.5rem;
 	text-align: center;
+	
 }
 
 /* How to Play button */
@@ -50,6 +57,7 @@
 	color: #ffe81f;
 	font-family: 'Arial';
 	cursor: pointer;
+	font-family: 'Pathway Gothic One', sans-serif;
 	
 }
 
@@ -64,6 +72,7 @@
 	font-family: 'Arial';
 	cursor: pointer;
 	margin-top: 3rem;
+	font-family: 'Pathway Gothic One', sans-serif;
 	
 	
 	
@@ -124,16 +133,21 @@
 	line-height: 2rem;
 }
 
+
+/*////////////  Main Page ////////////*/
+
 #rightGif {
 	display: none;
 	position: absolute;
 	top: 35%;
+	left: 30%;
 }
 
 #wrongGif {
 	display: none;
 	position: absolute;
 	top: 35%;
+	left: 30%;
 }
 
 #q1 {
@@ -150,28 +164,65 @@
 /* div where question pops up */
 #questionBox {
 	margin: 5rem;
+	display: grid;
+	place-items: center;
+	background-color: white;
+	
 }
 
 /* div where answer pops up */
 #answerBox {
 	margin: 5rem;
+	background-color: white;
+	
+}
+
+#mainTitle {
+	text-align: center;
+}
+
+#startButtonDiv {
+	text-align: center;
+}
+#questionButton {
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
 /* next question button */
+#nextContainer {
+	/* position: absolute;
+	top: 65%; */
+	text-align: center;
+	margin-top: 450px;
+}
+
 #nextButton {
-	position: absolute;
-	top: 65%;
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
+#finishContainer {
+	text-align: center;
+	margin-top: 450px;
+}
 #finishButton {
-	position: absolute;
-	top: 65%;
-	left: 15%;
+	position: absolute; 
+	top: 65%; 
+	left: 48%;
 	display: none;
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
-form {
-	position: absolute;
-	top: 30%;
+#form {
+	text-align: center;
 }
 
+input {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+body {
+	background-color:gray;
+	/* background-image: url(https://vignette.wikia.nocookie.net/starwars/images/1/15/Library_Busts_AotC.png/revision/latest?cb=20180629185842); */
+	font-family: 'Pathway Gothic One', sans-serif;
+
+}
