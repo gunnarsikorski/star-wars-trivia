@@ -106,9 +106,10 @@ html {
 	padding: 10%;
 	line-height: 150%;
     font-family: arial;
-	font-size: large;
+	font-size: 23px;
 	font-weight: bolder;
-    text-align: left;
+	text-align: left;
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
 #thanksModalFooter {
