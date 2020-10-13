@@ -160,6 +160,7 @@ form.addEventListener('submit', (event) => {
 
 const nextQuestion = document.querySelector('#nextButton');
 const finishButton = document.querySelector('#finishButton');
+const questionBox = document.querySelector('#questionBox')
 const answerBox = document.querySelector('#answerBox');
 nextQuestion.addEventListener('click', cleanPage);
 
@@ -216,6 +217,8 @@ function cleanPage() {
 	} else if (questionOne.innerText === triviaArray[19].question) {
 		nextQuestion.style.display = 'none';
 		questionOne.style.display = 'none';
+		questionBox.style.display = 'none'
+		form.style.display = 'none'
 		finishButton.style.display = 'block';
 	}
 }

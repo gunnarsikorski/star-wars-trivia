@@ -143,6 +143,8 @@ html {
 
 #q1 {
 	/* display: none; */
+	color: #ffe81f;
+	font-size: larger;
 }
 
 /* #a1 {
@@ -156,7 +158,10 @@ html {
 	margin: 5rem;
 	display: grid;
 	place-items: center;
-	background-color: white;
+	background-color: black;
+	border: solid #ffe81f;
+	border-radius: 15px;
+	font-size: larger;
 }
 
 /* div where answer pops up */
@@ -165,7 +170,9 @@ html {
 	width: 500px;
 	padding: 10px;
 	margin: 4rem auto;
-	background-color: white;
+	background-color: black;
+	border: solid #ffe81f;
+	border-radius: 15px;
 }
 
 #mainTitle {
@@ -177,6 +184,14 @@ html {
 }
 #questionButton {
 	font-family: 'Pathway Gothic One', sans-serif;
+	padding: 10px 30px;
+	background-color: black;
+	border: solid #ffe81f;
+	outline: none;
+	border-radius: 10px;
+	color: #ffe81f;
+	font-family: 'Arial';
+	cursor: pointer;
 }
 
 /* next question button */
@@ -189,6 +204,14 @@ html {
 
 #nextButton {
 	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: larger;
+	padding: 10px 30px;
+	background-color: black;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	color: #ffe81f;
+	cursor: pointer;
 }
 
 #finishContainer {
@@ -196,11 +219,19 @@ html {
 	margin-top: 450px;
 }
 #finishButton {
-	position: absolute;
-	top: 65%;
-	left: 48%;
+	margin: 0 auto;
 	display: none;
 	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 30px;
+	padding: 10px 30px;
+	background-color: black;
+	border: solid #ffe81f;
+	outline: none;
+	border-radius: 10px;
+	color: #ffe81f;
+	cursor: pointer;
+	height: 4rem;
+	width: 300px;
 }
 
 #form {
@@ -209,10 +240,19 @@ html {
 
 input {
 	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: larger;
+	padding: 10px 30px;
+	background-color: black;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	color: #ffe81f;
+	cursor: pointer;
 }
 
 body {
 	background-color: gray;
-	/* background-image: url(https://vignette.wikia.nocookie.net/starwars/images/1/15/Library_Busts_AotC.png/revision/latest?cb=20180629185842); */
+	background: url(https://i.pinimg.com/originals/80/9b/43/809b43102a7b4bcb18ad66cf48886579.jpg)
+		no-repeat;
 	font-family: 'Pathway Gothic One', sans-serif;
 }
