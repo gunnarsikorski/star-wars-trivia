@@ -29,7 +29,8 @@ The users of this game may be casual fans of Star Wars, or casual fans of trivia
 
 ## Technologies used:
 
-No APIs were used in the creation of this game
+- No APIs were used in the creation of this game
+- Google fonts for the Pathway Gothic font
 
 ---
 
