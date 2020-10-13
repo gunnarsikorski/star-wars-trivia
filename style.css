@@ -24,6 +24,7 @@ html {
 	height: 520px;
 	width: 600px;
 	border-radius: 8px;
+	border: solid rgb(76, 142, 157);
 	margin: 200px auto;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 	padding: 10%;
@@ -85,6 +86,7 @@ html {
 
 #thanksModalText {
 	background-color: black;
+	border: solid rgb(76, 142, 157);
 	background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
 	color: #ffe81f;
 	height: 850px;

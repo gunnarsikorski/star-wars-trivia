@@ -2,6 +2,7 @@
 
 ## Screenshot of App:
 
+![modal screen shot](modal.jpg)
 ![Screen shot of app](screenshot.jpg)
 
 ---
