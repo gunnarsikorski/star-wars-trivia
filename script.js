@@ -93,6 +93,56 @@ form.addEventListener('submit', (event) => {
 		answerInput.value === triviaArray[9].answer
 	) {
 		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[10].question &&
+		answerInput.value === triviaArray[10].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[11].question &&
+		answerInput.value === triviaArray[11].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[12].question &&
+		answerInput.value === triviaArray[12].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[13].question &&
+		answerInput.value === triviaArray[13].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[14].question &&
+		answerInput.value === triviaArray[14].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[15].question &&
+		answerInput.value === triviaArray[15].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[16].question &&
+		answerInput.value === triviaArray[16].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[17].question &&
+		answerInput.value === triviaArray[17].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[18].question &&
+		answerInput.value === triviaArray[18].answer
+	) {
+		rightGif.style.display = 'block';
+	} else if (
+		questionOne.innerText === triviaArray[19].question &&
+		answerInput.value === triviaArray[19].answer
+	) {
+		rightGif.style.display = 'block';
 	} else {
 		wrongGif.style.display = 'block';
 		// answerOne.innerText = triviaArray[].answer;
@@ -119,8 +169,6 @@ function cleanPage() {
 	// 	questionOne.innerText = triviaArray[i].question;
 
 
-	
-
 	// } I KNOW THIS (ABOVE) CAN WORK IM SO CLOSE^^^
 
 	if (questionOne.innerText === triviaArray[0].question) {
@@ -142,6 +190,26 @@ function cleanPage() {
 	} else if (questionOne.innerText === triviaArray[8].question) {
 		questionOne.innerText = triviaArray[9].question;
 	} else if (questionOne.innerText === triviaArray[9].question) {
+		questionOne.innerText = triviaArray[10].question;
+	} else if (questionOne.innerText === triviaArray[10].question) {
+		questionOne.innerText = triviaArray[11].question;
+	} else if (questionOne.innerText === triviaArray[11].question) {
+		questionOne.innerText = triviaArray[12].question;
+	} else if (questionOne.innerText === triviaArray[12].question) {
+		questionOne.innerText = triviaArray[13].question;
+	} else if (questionOne.innerText === triviaArray[13].question) {
+		questionOne.innerText = triviaArray[14].question;
+	} else if (questionOne.innerText === triviaArray[14].question) {
+		questionOne.innerText = triviaArray[15].question;
+	} else if (questionOne.innerText === triviaArray[15].question) {
+		questionOne.innerText = triviaArray[16].question;
+	} else if (questionOne.innerText === triviaArray[16].question) {
+		questionOne.innerText = triviaArray[17].question;
+	} else if (questionOne.innerText === triviaArray[17].question) {
+		questionOne.innerText = triviaArray[18].question;
+	} else if (questionOne.innerText === triviaArray[18].question) {
+		questionOne.innerText = triviaArray[19].question;
+	} else if (questionOne.innerText === triviaArray[19].question) {
 		nextQuestion.style.display = 'none';
 		questionOne.style.display = 'none';
 		finishButton.style.display = 'block';
@@ -216,6 +284,47 @@ const triviaArray = [
 		question:
 			'How many Dewbacks were in the original 1977 theatrical cut of A New Hope?',
 		answer: 'Two',
+	},
+	{
+		question: 'Which hand did Luke lose in Empire Strikes Back?',
+		answer: 'Right',
+	},
+	{
+		question: "Who became Anakin's padawan?",
+		answer: 'Ahsoka Tano',
+	},
+	{
+		question: 'Who Killed Shaak Ti?',
+		answer: 'General Grievous',
+	},
+	{
+		question:
+			'Which character had the first on-screen double-bladed lightsaber?',
+		answer: 'Darth Maul',
+	},
+	{
+		question: 'What planet is Padme from?',
+		answer: 'Naboo',
+	},
+	{
+		question: 'Who gets frozen in carbonite in the original trilogy?',
+		answer: 'Han Solo',
+	},
+	{
+		question: 'How many sith are there? According to Yoda',
+		answer: 'Two',
+	},
+	{
+		question: 'The clones are created on which planet?',
+		answer: 'Kamino',
+	},
+	{
+		question: 'Who was played by Kenny Baker?',
+		answer: 'R2-D2',
+	},
+	{
+		question: 'After falling out of favor with Count Dooku, Asajj Ventress became a what?',
+		answer: 'Bounty Hunter',
 	},
 ];
 

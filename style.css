@@ -15,16 +15,13 @@ html {
 }
 
 #modalTitle {
-    padding-bottom: 1.5rem;
-    
+	padding-bottom: 1.5rem;
 }
 
-
 #modalText {
-    
-    background-color: black;
-    background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
-    color: #ffe81f;
+	background-color: black;
+	background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+	color: #ffe81f;
 	height: 520px;
 	width: 600px;
 	border-radius: 4px;
@@ -34,17 +31,14 @@ html {
 	line-height: 150%;
 	font-family: arial;
 	font-weight: bolder;
-    font-size: 25px;
+	font-size: 25px;
 	text-align: center;
 	font-family: 'Pathway Gothic One', sans-serif;
-	
-	
 }
 
 #modalFooter {
-    padding-top: 1.5rem;
+	padding-top: 1.5rem;
 	text-align: center;
-	
 }
 
 /* How to Play button */
@@ -58,12 +52,11 @@ html {
 	font-family: 'Arial';
 	cursor: pointer;
 	font-family: 'Pathway Gothic One', sans-serif;
-	
 }
 
 /* Close button in the modal */
 #closeModal {
-    padding: 5px 18px;
+	padding: 5px 18px;
 	background-color: #ffe81f;
 	border: none;
 	outline: none;
@@ -73,9 +66,6 @@ html {
 	cursor: pointer;
 	margin-top: 3rem;
 	font-family: 'Pathway Gothic One', sans-serif;
-	
-	
-	
 }
 
 #thanksModal {
@@ -96,8 +86,8 @@ html {
 
 #thanksModalText {
 	background-color: black;
-    background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
-    color: #ffe81f;
+	background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+	color: #ffe81f;
 	height: 550px;
 	width: 600px;
 	border-radius: 4px;
@@ -105,7 +95,7 @@ html {
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 	padding: 10%;
 	line-height: 150%;
-    font-family: arial;
+	font-family: arial;
 	font-size: 23px;
 	font-weight: bolder;
 	text-align: left;
@@ -129,11 +119,9 @@ html {
 }
 
 #answerList {
-	
 	text-align: left;
 	line-height: 2rem;
 }
-
 
 /*////////////  Main Page ////////////*/
 
@@ -152,7 +140,7 @@ html {
 }
 
 #q1 {
-    /* display: none; */
+	/* display: none; */
 }
 
 #a1 {
@@ -161,21 +149,18 @@ html {
 	top: 60%;
 }
 
-
 /* div where question pops up */
 #questionBox {
 	margin: 5rem;
 	display: grid;
 	place-items: center;
 	background-color: white;
-	
 }
 
 /* div where answer pops up */
 #answerBox {
 	margin: 5rem;
 	background-color: white;
-	
 }
 
 #mainTitle {
@@ -206,8 +191,8 @@ html {
 	margin-top: 450px;
 }
 #finishButton {
-	position: absolute; 
-	top: 65%; 
+	position: absolute;
+	top: 65%;
 	left: 48%;
 	display: none;
 	font-family: 'Pathway Gothic One', sans-serif;
@@ -222,8 +207,7 @@ input {
 }
 
 body {
-	background-color:gray;
+	background-color: gray;
 	/* background-image: url(https://vignette.wikia.nocookie.net/starwars/images/1/15/Library_Busts_AotC.png/revision/latest?cb=20180629185842); */
 	font-family: 'Pathway Gothic One', sans-serif;
-
 }
