@@ -183,13 +183,13 @@ html {
 }
 #questionButton {
 	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: larger;
 	padding: 10px 30px;
 	background-color: black;
-	border: solid #ffe81f;
+	border: none;
 	outline: none;
 	border-radius: 10px;
 	color: #ffe81f;
-	font-family: 'Arial';
 	cursor: pointer;
 }
 
