@@ -24,7 +24,7 @@ html {
 	color: #ffe81f;
 	height: 520px;
 	width: 600px;
-	border-radius: 4px;
+	border-radius: 8px;
 	margin: 200px auto;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 	padding: 10%;
@@ -88,9 +88,9 @@ html {
 	background-color: black;
 	background: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
 	color: #ffe81f;
-	height: 550px;
+	height: 850px;
 	width: 600px;
-	border-radius: 4px;
+	border-radius: 8px;
 	margin: 200px auto;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 	padding: 10%;
@@ -127,27 +127,29 @@ html {
 
 #rightGif {
 	display: none;
-	position: absolute;
-	top: 35%;
-	left: 30%;
+	margin: 0 auto;
+	/* position: absolute; */
+	/* top: 35%;
+	left: 30%; */
 }
 
 #wrongGif {
 	display: none;
-	position: absolute;
+	margin: 0 auto;
+	/* position: absolute;
 	top: 35%;
-	left: 30%;
+	left: 30%; */
 }
 
 #q1 {
 	/* display: none; */
 }
 
-#a1 {
+/* #a1 {
 	display: none;
 	position: absolute;
 	top: 60%;
-}
+} */
 
 /* div where question pops up */
 #questionBox {
@@ -159,7 +161,10 @@ html {
 
 /* div where answer pops up */
 #answerBox {
-	margin: 5rem;
+	display: none;
+	width: 500px;
+	padding: 10px;
+	margin: 4rem auto;
 	background-color: white;
 }
 
@@ -176,10 +181,10 @@ html {
 
 /* next question button */
 #nextContainer {
-	/* position: absolute;
-	top: 65%; */
+	/* position: absolute; */
+	/*top: 65%; */
 	text-align: center;
-	margin-top: 450px;
+	margin-top: 50px;
 }
 
 #nextButton {

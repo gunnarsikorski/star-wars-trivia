@@ -15,6 +15,8 @@ openModalButton.addEventListener('click', openModal);
 
 closeModalButton.addEventListener('click', closeModal);
 
+// So glad Tabitha went over modals whenever that was, really helpful for this. //
+
 //________________________________________________________________________
 
 /// Question Button ///
@@ -42,6 +44,7 @@ const wrongGif = document.querySelector('#wrongGif');
 
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
+	answerBox.style.display = 'block';
 	if (
 		questionOne.innerText === triviaArray[0].question &&
 		answerInput.value === triviaArray[0].answer
@@ -145,6 +148,7 @@ form.addEventListener('submit', (event) => {
 		rightGif.style.display = 'block';
 	} else {
 		wrongGif.style.display = 'block';
+
 		// answerOne.innerText = triviaArray[].answer;
 		// answerOne.style.display = 'block';
 	}
@@ -156,18 +160,18 @@ form.addEventListener('submit', (event) => {
 
 const nextQuestion = document.querySelector('#nextButton');
 const finishButton = document.querySelector('#finishButton');
-
+const answerBox = document.querySelector('#answerBox');
 nextQuestion.addEventListener('click', cleanPage);
 
 function cleanPage() {
 	rightGif.style.display = 'none';
 	wrongGif.style.display = 'none';
-	answerOne.style.display = 'none';
+	answerBox.style.display = 'none';
+	// answerOne.style.display = 'none';
 	// questionOne.style.display = 'none';
 	answerInput.value = '';
 	// for (let i = 1; i < triviaArray.length; i++) {
 	// 	questionOne.innerText = triviaArray[i].question;
-
 
 	// } I KNOW THIS (ABOVE) CAN WORK IM SO CLOSE^^^
 
@@ -229,15 +233,11 @@ const openThanksModal = () => {
 };
 
 const closeThanksModal = () => {
-	thanksModal.style.display = 'none'
-	
-}
+	thanksModal.style.display = 'none';
+};
 
 finishButton.addEventListener('click', openThanksModal);
 // replayButton.addEventListener('click', closeThanksModal)
-
-
-
 
 //________________________________________________________________________
 
@@ -323,7 +323,8 @@ const triviaArray = [
 		answer: 'R2-D2',
 	},
 	{
-		question: 'After falling out of favor with Count Dooku, Asajj Ventress became a what?',
+		question:
+			'After falling out of favor with Count Dooku, Asajj Ventress became a what?',
 		answer: 'Bounty Hunter',
 	},
 ];
